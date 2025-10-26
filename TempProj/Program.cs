@@ -7,18 +7,14 @@ using System.Threading;
 
 class Program
 {
-    // ----------------- CONFIG (change if you want) -----------------
-    static string defaultGameExe = @"C:\Users\dracu\Desktop\Star Stable 1\PXStudioEngine.exe";
-    static string defaultTarget = @"C:\Users\dracu\Desktop\Star Stable 1\data.csa";
+   
+    static string defaultGameExe = @"";  // Type your game exe path here
+    static string defaultTarget = @"";    // Type your target file path here
     static string defaultBackupFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StarstableBackups");
-    // Original and replacement strings you requested:
+    // Horse flying code swap
     static string originalText = "global/MapWindow.Start();";
     static string replacementText = "global/Horse.AddRelativeForce(0,1,2.5f);";
-    // If replacement is longer than the found match in binary mode:
-    // - if true: truncate replacement to match original length
-    // - if false: pad replacement with 0x00 bytes to match original length
     static bool truncateIfLonger = true;
-    // ----------------------------------------------------------------
 
     static int Main(string[] args)
     {
@@ -44,7 +40,6 @@ class Program
 
         bool changed = false;
 
-        // 1) Try text replacement (safe and readable)
         try
         {
             if (TryTextReplace(target, originalText, replacementText, out string usedEncoding))
@@ -62,7 +57,7 @@ class Program
             Console.WriteLine($"Text replacement attempt failed: {ex.Message}");
         }
 
-        // 2) If text replacement failed, try binary replacement for UTF-8 encoded bytes
+        // If text replacement failed, try binary replacement for UTF-8 encoded bytes
         if (!changed)
         {
             try
@@ -109,7 +104,7 @@ class Program
                 if (proc != null)
                 {
                     Console.WriteLine($"Launched game (PID {proc.Id}). Waiting for exit...");
-                    // If caller requested a specific process name to wait for (useful if launcher spawns another exe)
+                    // If caller requested a specific process name to wait for
                     if (!string.IsNullOrEmpty(cfg.WaitProcessName))
                     {
                         WaitForProcessByName(cfg.WaitProcessName);
@@ -187,9 +182,9 @@ class Program
     }
 
     // returns:
-    // 1 => success
-    // 2 => pattern not found
-    // 3 => replaced but replacement truncated/padded (info in msg)
+    // 1 == success
+    // 2 == pattern not found
+    // 3 == replaced but replacement truncated/padded (info in msg)
     static int TryBinaryReplace(string path, byte[] match, byte[] replace, bool truncateIfLonger, out string msg)
     {
         msg = "";
