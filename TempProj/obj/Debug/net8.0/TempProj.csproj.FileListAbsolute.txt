@@ -1,0 +1,14 @@
+C:\Users\dracu\Documents\voyenka\TempProj\bin\Debug\net8.0\TempProj.exe
+C:\Users\dracu\Documents\voyenka\TempProj\bin\Debug\net8.0\TempProj.deps.json
+C:\Users\dracu\Documents\voyenka\TempProj\bin\Debug\net8.0\TempProj.runtimeconfig.json
+C:\Users\dracu\Documents\voyenka\TempProj\bin\Debug\net8.0\TempProj.dll
+C:\Users\dracu\Documents\voyenka\TempProj\bin\Debug\net8.0\TempProj.pdb
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\TempProj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\TempProj.AssemblyInfoInputs.cache
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\TempProj.AssemblyInfo.cs
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\TempProj.csproj.CoreCompileInputs.cache
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\TempProj.dll
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\refint\TempProj.dll
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\TempProj.pdb
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\TempProj.genruntimeconfig.cache
+C:\Users\dracu\Documents\voyenka\TempProj\obj\Debug\net8.0\ref\TempProj.dll
