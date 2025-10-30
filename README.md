@@ -61,4 +61,4 @@ Make sure to enter your own file paths for the game executable and data file.
 ## Future Development
 
 > **Important:** Since the game engine is very unstable there are no incoming future updates.
-> I may add a little GUI to make the scripting more convenient.
+> I may add a little GUI to make the scripting process more convenient.
