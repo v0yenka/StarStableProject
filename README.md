@@ -30,7 +30,7 @@ This tool is intended **for educational and testing purposes only** and should o
 
 ## How to Run the Program
 
-### 1. Using the `.exe` (recommended for teammates)
+### 1. Using the `.exe
 
 1. Copy `TempProj.exe` to your desired folder  
 2. Run `TempProj.exe`  
