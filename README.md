@@ -36,8 +36,8 @@ This tool is intended **for educational and testing purposes only** and should o
 
 ### 2. Building from Source
 If you want to compile and run the project manually:
-Clone the repository
 ```bash
+# Clone the repository
 git clone [https://github.com/v0yenka/StarStableProject.git](https://github.com/v0yenka/StarStableProject.git)](https://github.com/v0yenka/StarStableProject)
 cd StarStableProject
 ```
